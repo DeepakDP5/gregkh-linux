@@ -60,6 +60,7 @@ if ($name eq "") {
 print "Merge $version into android-$major_version.$minor_version\n";
 print "\n";
 print "Changes in $major_version.$minor_version.$stable_version\n";
+print "Changes M1"
 
 open GIT, "git log --format=\"%s\" --reverse v$major_version.$minor_version.$last_version..v$major_version.$minor_version.$stable_version | " || die "Failed to run git";
 
