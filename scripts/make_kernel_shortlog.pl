@@ -62,6 +62,7 @@ print "\n";
 print "Changes in $major_version.$minor_version.$stable_version\n";
 print "Changes M1"
 print "Changes M2"
+print "Changes M3"
 
 open GIT, "git log --format=\"%s\" --reverse v$major_version.$minor_version.$last_version..v$major_version.$minor_version.$stable_version | " || die "Failed to run git";
 
